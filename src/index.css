@@ -1,5 +1,12 @@
-@import-normalize; /* bring in normalize.css styles */
-
+/* @import-normalize; bring in normalize.css styles */
+@import-normalize;
+:root {
+  --bg-card-color: #d7d4e4;
+  --bg-border-color: #1b0b79;
+  --bg-section-color: #6584f5;
+  --bg-box-color: #acafbb;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +14,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-section-color);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
