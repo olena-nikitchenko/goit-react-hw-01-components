@@ -1,0 +1,62 @@
+:root {
+  --bg-item-color: #f5f4fa;
+  --bg-border-color: #757575;
+  --bg-section-color: #afb1b8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.friendSection {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-section-color);
+}
+.friendList {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.friendItem {
+  display: flex;
+  gap: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  min-width: 300px;
+  height: auto;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: var(--bg-item-color);
+  border: 2px solid var(--bg-border-color);
+  border-radius: 10px;
+  transition: box-shadow 250ms var(--timing-function);
+}
+.friendItem:last-child {
+  margin-bottom: 0;
+}
+.friendItem:hover,
+.friendItem:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.statusItem {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+.statusItem.isOnline {
+  background-color: green;
+}
+
+.imgAvatar {
+  width: 100px;
+  height: 100px;
+}
+.name {
+  align-items: center;
+}
